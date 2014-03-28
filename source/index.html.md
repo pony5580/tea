@@ -2,7 +2,7 @@
 title: Middleman
 ---
 
-# Middlemanとは?????????
+# Middlemanとは?
 
 `Middleman` はRuby製(Sinatra)の静的 Web サイトを作成するためのコマンドラインツールで静的サイトジェネレータ（Static Site Generator）とか呼ばれてます。
 
