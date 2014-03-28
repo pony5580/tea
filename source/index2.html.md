@@ -137,3 +137,18 @@ Middlemanでは基本はテンプレート言語 ERbを使用し Template , layo
 + Form ヘルパ
 + フォーマットヘルパ
 + ダミーテキスト & Placehold.it ヘルパ
+
+
+## リンクヘルパ
+
+リンクタグを作るために `link_to` メソッドを提供しています基本的な使い方は `link_to` がリンク名とリンク URL を引数に取ります
+
+	<%= link_to '私のサイト', 'http://mysite.com' %>
+
+ブロックをとることも出来る
+
+	<% link_to 'http://mysite.com' do %>
+	  <%= image_tag 'mylogo.png' %>
+	<% end %>
+
+
