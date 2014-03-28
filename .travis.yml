@@ -1,3 +1,19 @@
 ---
 language: ruby
 script: bundle exec middleman build
+env:
+  global:
+    - GIT_COMMITTER_NAME=masa
+    - GIT_COMMITTER_EMAIL=masa@s2factory.co.jp
+    - GIT_AUTHOR_NAME=masa
+    - GIT_AUTHOR_EMAIL=masa@s2factory.co.jp
+before_script:
+  - git clone --quiet https://github.com/pony5580/tea.git build
+  - pushd build
+  - git checkout -b gh-pages
+  - popd
+
+after_success:
+  - cd build
+  - git add -A
+  - git commit -m 'Update'
