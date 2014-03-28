@@ -19,4 +19,4 @@ after_success:
   - cd build
   - git add -A
   - git commit -m 'Update'
-  - '[ "$TRAVIS_BRANCH" == "master" ] && [ $GH_TOKEN ] && git push --quiet https://$GH_TOKEN@github.com/pony5580/tea.git gh-pages 2> /dev/null'
+  - '[ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ] && [ $GH_TOKEN ] && git push -f --quiet https://$GH_TOKEN@github.com/pony5580/tea.git gh-pages'
