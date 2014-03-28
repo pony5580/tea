@@ -147,6 +147,7 @@ Middlemanでは基本はテンプレート言語 ERbを使用し Template , layo
 
 ブロックをとることも出来る
 
+
 	<% link_to 'http://mysite.com' do %>
 	  <%= image_tag 'mylogo.png' %>
 	<% end %>
