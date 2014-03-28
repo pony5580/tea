@@ -127,13 +127,12 @@ Middlemanは開発コードとプロダクションコード分離されてい�
 Middlemanでは基本はテンプレート言語 ERbを使用し Template , layout , partial　という構成で構築されます。
 
 
-## アセットパイプライン
+# アセットパイプライン
 
 ### 依存性管理
 
 Sprockets は Javascript (と CoffeeScript) のライブラリを管理するためのツールで, 依存性を宣言し 3rd パーティのコードを読み込みます。Sprockets は .js や .coffee のファイルの中で, require メソッドを使えるようにし, プロジェクトまたは 3rd パーティ製の gem から外部ファイルを取り込むことができます。
 
-jQuery ライブラリを含む jquery.js ファイルとアプリケーションコードが含まれる app.js があるとします。 次のようにすることで app ファイルは動作する前に jquery を読み込むことができます:
 
 # サイトマップ
 

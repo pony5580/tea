@@ -17,7 +17,7 @@ margin: 0 auto;
 header#hero {
   padding: 50px 0 30px 0;
 border-bottom: 1px solid #d9ccad;
-background: #e1d7be url('/images/bg.png') no-repeat center top;
+background: #e1d7be url('../images/bg.png') no-repeat center top;
 text-align: center;
 }
 
